@@ -1,171 +1,140 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
-    <title>Artists</title>
-    <style>
-        table {
-            margin: auto;
-            border-collapse: collapse;
-            margin-top: 20px;
-            cursor: pointer;
-        }
-        main{            background-color: white;
-}
-
-        thead tr {
-            background-color: rgb(244,244,244); 
-            
-
-        }
-        th, td {
-            border: 1px solid #ddd;
-            padding: 8px;
-            text-align: left;
-        }
-        
-        tr:nth-child(even) {
-            background-color: rgb(244,244,244); 
-        }
-        tbody tr{
-            transition: 0.2s;
-        }
-        tbody tr:hover {
-            background-color: rgb(231, 237, 240);
-        }
-    </style>
-</head>
-<body>
-    <header>
-        <h1>Artists</h1>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-            </ul>
-        </nav>
-    </header>
-    <div class="app-container">
-
-    <main>
-        <table>
-            <thead>
-                <tr>
-                    <th>Artist</th>
-                    <th>Style</th>
-                    <th>Birthdate</th>
-                    <th>Notable Works</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>Jackson Pollock</td>
-                    <td>Abstract Expressionism</td>
-                    <td>January 28, 1912</td>
-                    <td>Number 1A, 1948; Autumn Rhythm</td>
-                </tr>
-                <tr>
-                    <td>Mark Rothko</td>
-                    <td>Color Field Painting</td>
-                    <td>September 25, 1903</td>
-                    <td>No. 61 (Rust and Blue), Untitled (Black on Grey)</td>
-                </tr>
-                <tr>
-                    <td>Wassily Kandinsky</td>
-                    <td>Abstract Art</td>
-                    <td>December 16, 1866</td>
-                    <td>Composition VII, Yellow-Red-Blue</td>
-                </tr>
-                <tr>
-                    <td>Hokusai</td>
-                    <td>Ukiyo-e</td>
-                    <td>October 31, 1760</td>
-                    <td>The Great Wave off Kanagawa, Thirty-Six Views of Mount Fuji</td>
-                </tr>
-                <tr>
-                    <td>Hiroshige</td>
-                    <td>Ukiyo-e</td>
-                    <td>September 14, 1797</td>
-                    <td>One Hundred Famous Views of Edo, The Fifty-Three Stations of the Tōkaidō</td>
-                </tr>
-                <tr>
-                    <td>Utamaro</td>
-                    <td>Ukiyo-e</td>
-                    <td>1753</td>
-                    <td>Three Beauties of the Present Day, Ten Studies in Female Physiognomy</td>
-                </tr>
-                <tr>
-                    <td>Pablo Picasso</td>
-                    <td>Cubism</td>
-                    <td>October 25, 1881</td>
-                    <td>Les Demoiselles d'Avignon, Guernica</td>
-                </tr>
-                <tr>
-                    <td>Fernando Botero</td>
-                    <td>Boterismo</td>
-                    <td>April 19, 1932</td>
-                    <td>The Mona Lisa, The Presidential Family</td>
-                </tr>
-                <tr>
-                    <td>Lucian Freud</td>
-                    <td>Figurative Art</td>
-                    <td>December 8, 1922</td>
-                    <td>Benefits Supervisor Sleeping, Girl with a White Dog</td>
-                </tr>
-                <tr>
-                    <td>Claude Monet</td>
-                    <td>Impressionism</td>
-                    <td>November 14, 1840</td>
-                    <td>Water Lilies series, Impression, Sunrise</td>
-                </tr>
-                <tr>
-                    <td>Vincent van Gogh</td>
-                    <td>Post-Impressionism</td>
-                    <td>March 30, 1853</td>
-                    <td>The Starry Night, Sunflowers</td>
-                </tr>
-                <tr>
-                    <td>Ansel Adams</td>
-                    <td>Photography</td>
-                    <td>February 20, 1902</td>
-                    <td>Moonrise, Hernandez, Clearing Winter Storm</td>
-                </tr>
-                <tr>
-                    <td>George Stubbs</td>
-                    <td>Animal painting</td>
-                    <td>August 25, 1724</td>
-                    <td>Molly Longlegs, Whistlejacket</td>
-                </tr>
-                <tr>
-                    <td>Rosa Bonheur</td>
-                    <td>Realism, Animal painting</td>
-                    <td>March 16, 1822</td>
-                    <td>The Horse Fair, Ploughing in the Nivernais</td>
-                </tr>
-                <tr>
-                    <td>Charley Harper</td>
-                    <td>Modern, Wildlife art</td>
-                    <td>August 4, 1922</td>
-                    <td>Cardinal Closeup, Mystery of the Missing Migrants</td>
-                </tr>
-                <tr>
-                    <td>Georgia O'Keeffe</td>
-                    <td>Modernism, Precisionism</td>
-                    <td>November 15, 1887</td>
-                    <td>Black Iris, Jimson Weed/White Flower No. 1</td>
-                </tr>
-                <tr>
-                    <td>Rachel Ruysch</td>
-                    <td>Baroque, Still life</td>
-                    <td>June 3, 1664</td>
-                    <td>Flower Still Life, Fruit Still Life</td>
-                </tr>
-            </tbody>
-        </table>
-    </main>
-</div>
-    <footer>
-    </footer>
-</body>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="artists_styles.css">
+        <title>Artists</title>
+    </head>
+    <body>
+        <header>
+            <h1>Artists</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                </ul>
+            </nav>
+        </header>
+        <div class="app-container">
+            <main>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Artist</th>
+                            <th>Style</th>
+                            <th>Birthdate</th>
+                            <th>Notable Works</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Jackson Pollock</td>
+                            <td>Abstract Expressionism</td>
+                            <td>January 28, 1912</td>
+                            <td>Number 1A, 1948; Autumn Rhythm</td>
+                        </tr>
+                        <tr>
+                            <td>Mark Rothko</td>
+                            <td>Color Field Painting</td>
+                            <td>September 25, 1903</td>
+                            <td>No. 61 (Rust and Blue), Untitled (Black on Grey)</td>
+                        </tr>
+                        <tr>
+                            <td>Wassily Kandinsky</td>
+                            <td>Abstract Art</td>
+                            <td>December 16, 1866</td>
+                            <td>Composition VII, Yellow-Red-Blue</td>
+                        </tr>
+                        <tr>
+                            <td>Hokusai</td>
+                            <td>Ukiyo-e</td>
+                            <td>October 31, 1760</td>
+                            <td>The Great Wave off Kanagawa, Thirty-Six Views of Mount Fuji</td>
+                        </tr>
+                        <tr>
+                            <td>Hiroshige</td>
+                            <td>Ukiyo-e</td>
+                            <td>September 14, 1797</td>
+                            <td>One Hundred Famous Views of Edo, The Fifty-Three Stations of the Tōkaidō</td>
+                        </tr>
+                        <tr>
+                            <td>Utamaro</td>
+                            <td>Ukiyo-e</td>
+                            <td>1753</td>
+                            <td>Three Beauties of the Present Day, Ten Studies in Female Physiognomy</td>
+                        </tr>
+                        <tr>
+                            <td>Pablo Picasso</td>
+                            <td>Cubism</td>
+                            <td>October 25, 1881</td>
+                            <td>Les Demoiselles d'Avignon, Guernica</td>
+                        </tr>
+                        <tr>
+                            <td>Fernando Botero</td>
+                            <td>Boterismo</td>
+                            <td>April 19, 1932</td>
+                            <td>The Mona Lisa, The Presidential Family</td>
+                        </tr>
+                        <tr>
+                            <td>Lucian Freud</td>
+                            <td>Figurative Art</td>
+                            <td>December 8, 1922</td>
+                            <td>Benefits Supervisor Sleeping, Girl with a White Dog</td>
+                        </tr>
+                        <tr>
+                            <td>Claude Monet</td>
+                            <td>Impressionism</td>
+                            <td>November 14, 1840</td>
+                            <td>Water Lilies series, Impression, Sunrise</td>
+                        </tr>
+                        <tr>
+                            <td>Vincent van Gogh</td>
+                            <td>Post-Impressionism</td>
+                            <td>March 30, 1853</td>
+                            <td>The Starry Night, Sunflowers</td>
+                        </tr>
+                        <tr>
+                            <td>Ansel Adams</td>
+                            <td>Photography</td>
+                            <td>February 20, 1902</td>
+                            <td>Moonrise, Hernandez, Clearing Winter Storm</td>
+                        </tr>
+                        <tr>
+                            <td>George Stubbs</td>
+                            <td>Animal painting</td>
+                            <td>August 25, 1724</td>
+                            <td>Molly Longlegs, Whistlejacket</td>
+                        </tr>
+                        <tr>
+                            <td>Rosa Bonheur</td>
+                            <td>Realism, Animal painting</td>
+                            <td>March 16, 1822</td>
+                            <td>The Horse Fair, Ploughing in the Nivernais</td>
+                        </tr>
+                        <tr>
+                            <td>Charley Harper</td>
+                            <td>Modern, Wildlife art</td>
+                            <td>August 4, 1922</td>
+                            <td>Cardinal Closeup, Mystery of the Missing Migrants</td>
+                        </tr>
+                        <tr>
+                            <td>Georgia O'Keeffe</td>
+                            <td>Modernism, Precisionism</td>
+                            <td>November 15, 1887</td>
+                            <td>Black Iris, Jimson Weed/White Flower No. 1</td>
+                        </tr>
+                        <tr>
+                            <td>Rachel Ruysch</td>
+                            <td>Baroque, Still life</td>
+                            <td>June 3, 1664</td>
+                            <td>Flower Still Life, Fruit Still Life</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </main>
+        </div>
+        <footer>
+        </footer>
+    </body>
 </html>
