@@ -1,0 +1,57 @@
+      /* Additional styles for Flexbox layout */
+      .exhibitions-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        /*align-items: flex-start;*/
+      }
+
+      .exhibition {
+        width: calc(50% - 40px); /* Adjust width as needed */
+        margin-bottom: 20px;
+        background-color: white;
+        gap: 8px;
+        border-bottom: 1px solid gray;
+        border-left: 1px solid gray;
+        padding: 16px;
+        border-radius: 8px;
+      }
+
+      .artworks-gallery {
+        display: flex;
+        flex-wrap: wrap; /* Allow images to wrap to the next line */
+        justify-content: space-evenly;
+        margin-top: 10px;
+        gap: 16px;
+        padding: 20px;
+
+      }
+
+      .artworks-gallery img {
+        display: flex;
+        width: 100%;
+        max-width: 300px; 
+        height: auto; 
+        box-sizing: border-box;
+        margin-bottom: 10px; 
+        border-radius: 8px;
+      }
+
+      .artworks-gallery img:hover {
+        transform: scale(1.1);
+        transition: ease-in;
+        transition-duration: 0.4s;
+        
+      }
+
+      .card-header{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+
+      .artists{
+        display: flex;
+        justify-content: center;
+        font-weight: 600;
+      }
