@@ -40,100 +40,81 @@ main {
     z-index: -1;
 }
 
-/* Top Arts Section */
+/* Top Arts & Artists Section */
 .top-arts {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-}
-
-.top-arts h2 {
     margin-bottom: 20px;
-}
+    background-color: white;
+    gap: 8px;
+    border-bottom: 1px solid gray;
+    border-left: 1px solid gray;
+    padding: 16px;
+    border-radius: 40px;
+  }
 
-.top-arts .art-items {
-    display: flex;
-    justify-content: space-around;
+.top-arts-list {
+    list-style-type: none;
+    padding: 0;
     flex-wrap: wrap;
+    display: flex;
+    gap:16px;
 }
-
-.top-arts .art-item {
-    width: 30%;
-    margin: 0 10px 20px 10px;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    padding: 10px;
-    text-align: center;
-    box-sizing: border-box;
-}
-
-.top-arts .art-item img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 5px;
-}
-
-.top-arts .art-item h3 {
-    margin-top: 10px;
-    font-size: 1.2em;
-}
-
-.top-arts .art-item p {
-    margin-top: 10px;
-    color: #777;
-}
-
-/* Responsive Design */
-@media screen and (max-width: 768px) {
-    .top-arts .art-item {
-        width: 100%;
-    }
-}
-
-/* Top Artists Section */
-.top-artists {
+.top-arts-card{
     display: flex;
     flex-direction: column;
+    width: 400px;
+    border: 1px solid rgb(235, 232, 232);
+    border-radius: 6px;
+    padding: 16px;
+    height: fit-content;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: 0.8s;
+}
+.top-arts-card:hover{
+    background-color: lightgray;
+}
+.top-arts-card img {
+    height: 400px;
+    border-radius: 6px;
+}
+.top-arts-header{
+    display: flex;
+    justify-content: space-between;
     align-items: center;
+}
+
+/* Button of top arts*/
+.center-container {
     text-align: center;
-}
+  }
 
-.top-artists h2 {
-    margin-bottom: 20px;
-}
-
-.top-artists .artist {
-    width: 30%;
-    margin-bottom: 20px;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    padding: 10px;
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
     text-align: center;
-}
-
-.top-artists .artist img {
-    max-width: 100%;
-    height: auto;
+    text-decoration: none;
+    cursor: pointer;
+    border: 2px solid #3498db;
     border-radius: 5px;
-}
+    color: #ffffff;
+    background-color: #3498db;
+    transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+  }
+  
+  /* Hover Effect */
+  .button:hover {
+    background-color: #ffffff;
+    color: #3498db;
+  }
+  
+  /* Optional: Add more styles for different button states (active, focus, etc.) */
+  .button:active,
+  .button:focus {
+    outline: none;
+    /* Add styles for active/focus state if needed */
+  }
 
-.top-artists .artist h3 {
-    margin-top: 10px;
-    font-size: 1.2em;
-}
-
-.top-artists .artist p {
-    margin-top: 10px;
-    color: #777;
-}
-
-/* Responsive Design */
-@media screen and (max-width: 768px) {
-    .top-artists .artist {
-        width: 100%;
-    }
-}
 
 /* About Us Section */
 .about-us {
